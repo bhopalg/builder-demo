@@ -11,6 +11,7 @@ export async function getStaticProps() {
         userAttributes: {
           urlPath: "/",
         },
+          cache: false,
       })
       .toPromise();
 
