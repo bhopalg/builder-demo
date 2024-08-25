@@ -1,11 +1,7 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import {builder, BuilderComponent} from "@builder.io/react";
 import "@/builder-registry"
 import {BuilderContent} from "@builder.io/sdk";
 import React from "react";
-
-const inter = Inter({ subsets: ["latin"] });
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
