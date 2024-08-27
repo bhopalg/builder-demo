@@ -17,13 +17,12 @@ export async function getStaticProps() {
   return {
     props: {
       homepage: page || null,
-        revalidate: 30,
+        revalidate: 10
     },
   };
 }
 
 export default function Home({homepage}: {homepage: BuilderContent | null}) {
-
   console.log(homepage);
   return <BuilderComponent model="page" content={homepage || undefined} />
 }
