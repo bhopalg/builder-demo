@@ -12,6 +12,7 @@ export async function getStaticProps() {
           urlPath: "/",
         },
         cacheSeconds: 10,
+        cachebust: true,
       })
       .toPromise();
 
