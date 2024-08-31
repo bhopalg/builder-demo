@@ -19,7 +19,7 @@ export async function getStaticProps() {
   return {
     props: {
       homepage: page || null,
-        revalidate: 10
+        revalidate: 60,
     },
   };
 }
